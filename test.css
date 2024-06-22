@@ -1,0 +1,277 @@
+/* styles.css */
+
+body {
+    font-family: Cambria, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    background-color: black;
+}
+
+nav {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: lightslategray;
+}
+#about > h2{
+    font-size: 30px;
+}
+#about > div{
+    height:700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /*position: fixed;*/
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+}
+
+.project {
+    margin: 20px 0;
+    padding: 10px;
+    background: #eaeaea;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0 0 20px;
+    font-family: Cambria, sans-serif;
+    font-size: 20px;
+}
+#projects > div > div.gallery > img{
+    width: 510px;
+    align-items: center;
+}
+#projects > div:nth-child(2) > div > img:nth-child(1){
+    padding-right: 10px;
+}
+#projects > div:nth-child(2) > div > img:nth-child(3){
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#projects > div:nth-child(2) > div > img:nth-child(1){
+    padding-left: 7px;
+}
+/*#projects > div:nth-child(2) > div > img:nth-child(3){*/
+/*    padding-right: 5 px;*/
+/*}*/
+#projects > div:nth-child(2) > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h3{
+    font-size: 30px;
+    font-family: Cambria, sans-serif;
+    font-style: oblique;
+
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 25px;
+    font-style: italic;
+}
+body > nav{
+    font-size: 20px;
+    font-style: oblique;
+}
+#skills > ul{
+    font-size: 25px;
+}
+#projects > div:nth-child(3) > div{
+    display: flex;
+    justify-content: space-between;
+}
+#projects > div:nth-child(3) > div > img:nth-child(1){
+    width: 900px;
+    padding-bottom: 10px;
+}
+#projects > div:nth-child(3) > div > img:nth-child(2){
+    width: 900px;
+    height: 600px;
+}
+#projects > div:nth-child(3) > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about > div > img {
+    height: 700px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#skills > h2{
+    text-align: center;
+}
+#skills > ul{
+    flex-direction: column;
+}
+/*#competitions > img{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+/*#competitions > div.gallery > img{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+/*.gallery*/
+#competitions .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+#contact{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#contact > div{
+    align-content:center ;
+}
+nav ul li a:hover {
+    color: darkred;
+    animation: backwards;
+}
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, transform 0.3s;
+}
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: #575757;
+    z-index: -1;
+    transition: height 0.3s ease;
+}
+nav ul li a:hover::before {
+    height: 100%;
+}
+nav ul li a:hover {
+    color: yellow; /* You can choose any color you prefer */
+    transform: scale(1.1); /* Slightly increase the size of the link */
+}
+#contact a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 0;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s, transform 0.3s;
+}
+#contact a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: #ddd;
+    z-index: -1;
+    transition: height 0.3s ease;
+}
+#contact a:hover::before {
+    height: 100%;
+}
+#contact a:hover {
+    color: blue;
+    transform: scale(1.1);
+}
